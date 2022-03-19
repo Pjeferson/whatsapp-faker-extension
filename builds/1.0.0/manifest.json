@@ -1,0 +1,22 @@
+{
+  "name": "WhatsApp Faker",
+  "description": "Replaces WhatsApp contacts data",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_title": "WhatsApp Faker",
+    "default_icon": "icon.png"
+  }
+}
